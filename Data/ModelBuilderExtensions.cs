@@ -16,10 +16,10 @@ namespace Code1stUsersRoles.Data
 
             // Seed Roles
             var adminRole = new IdentityRole("Admin");
-            adminRole.NormalizedName = adminRole.Name.ToUpper();
+            adminRole.NormalizedName = adminRole.Name!.ToUpper();
 
             var memberRole = new IdentityRole("Member");
-            memberRole.NormalizedName = memberRole.Name.ToUpper();
+            memberRole.NormalizedName = memberRole.Name!.ToUpper();
 
             List<IdentityRole> roles = new List<IdentityRole>() {
             adminRole,
